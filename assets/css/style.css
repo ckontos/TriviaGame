@@ -1,0 +1,92 @@
+body {
+	background-image: url("../images/background.png");
+}
+
+h1 {
+	text-align: center;
+	font-size: 65px;
+	letter-spacing: 3px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+#logo {
+	width: 95%;
+	display: block;
+	margin: auto;
+	margin-bottom: 25px;
+	height: 250px;
+}
+
+button {
+	width: 80%;
+	height: 40px;
+	margin: 0 10%;
+	
+}
+
+.timer {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 36px;
+}
+
+button:hover {
+	background: #3399ff;
+	color: black;
+}
+
+button:active {
+	background: black;
+	color: #3399ff;
+}
+
+
+h1, h2, h3, .question {
+	text-align: center;
+}
+
+.startscreen {
+	width: 80%;
+	height: 40px;
+	margin: 0 10%;
+}
+
+
+#startbutton {
+	font-size: 32px;
+	width: 80%;
+	height: 60px;
+	margin: 0 10%;
+}
+
+
+#submitquiz {
+	margin-top: 100px;
+	margin-bottom: 25px;
+	font-size: 24px;
+}
+
+.selection {
+	text-align: center;
+}
+
+.answerchoice {
+	font-size: 18px;
+}
+
+.selection {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #3399ff;
+}
+
+#doOver {
+	font-size: 32px;
+	width: 80%;
+	height: 60px;
+	margin: 0 10%;
+}
+
