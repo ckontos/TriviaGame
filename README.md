@@ -13,4 +13,4 @@
     </ul>
 </p>
 
-<a href="https://ckontos.github.io/Responsive-Portfolio/">View Here!</a>
+<a href="https://ckontos.github.io/TriviaGame/">Take the quiz!</a>
