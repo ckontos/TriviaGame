@@ -26,82 +26,82 @@ $(document).ready(function() {
 		run();
 	});
 
-	function decrement(){
+	function decrement() {
 		count--;
 		$("#timeLeft").html(count);
 		if (count === 0) {
-		stop();
-		alert("Time is up!");
-		completed();
-		$(".gameScreen").hide();
-		$(".resultScreen").show();
+			stop();
+			alert("Time is up!");
+			completed();
+			$(".gameScreen").hide();
+			$(".resultScreen").show();
 		}
-	}	
+	}
 
-	function run(){
+	function run() {
 		intervalId = setInterval(decrement, 1000);
 	}
 
-	function stop(){
+	function stop() {
 		clearInterval(intervalId);
 	}
 
 	$("#submitQuiz").on("click", function() {
-			stop();
-			if (confirm("Are you sure you want to submit your answers?")){
-				$(".gameScreen").hide();
-				$(".resultScreen").show();
-				completed();
-			} 
-			else {
-				history.go(-1);
-				run();
-			}
+		stop();
+		if (confirm("Are you sure you want to submit your answers?")) {
+			$(".gameScreen").hide();
+			$(".resultScreen").show();
+			completed();
+		}
+		else {
+			history.go(-1);
+			run();
+		}
 	});
-	
-	$(".answerchoice1").on("click", function(){
+
+	$(".answerchoice1").on("click", function() {
 		value1 = $(this).attr("value");
 		console.log(value1);
 		$(".showclick1").html(value1);
 	});
 
-	$(".answerchoice2").on("click", function(){
+	$(".answerchoice2").on("click", function() {
 		value2 = $(this).attr("value");
 		console.log(value2);
 		$(".showclick2").html(value2);
 	});
 
-	$(".answerchoice3").on("click", function(){
+	$(".answerchoice3").on("click", function() {
 		value3 = $(this).attr("value");
 		console.log(value3);
 		$(".showclick3").html(value3);
 	});
 
-	$(".answerchoice4").on("click", function(){
+	$(".answerchoice4").on("click", function() {
 		value4 = $(this).attr("value");
 		console.log(value4);
 		$(".showclick4").html(value4);
 	});
 
-	$(".answerchoice5").on("click", function(){
+	$(".answerchoice5").on("click", function() {
 		value5 = $(this).attr("value");
 		console.log(value5);
 		$(".showclick5").html(value5);
 	});
 
-	$(".answerchoice6").on("click", function(){
+	$(".answerchoice6").on("click", function() {
 		value6 = $(this).attr("value");
 		console.log(value6);
 		$(".showclick6").html(value6);
 	});
 
-	$(".answerchoice7").on("click", function(){
+	$(".answerchoice7").on("click", function() {
 		value7 = $(this).attr("value");
 		console.log(value7);
 		$(".showclick7").html(value7);
 	});
 
-	$(".answerchoice8").on("click", function(){
+	$(".answerchoice8").on("click", function() {
 		value8 = $(this).attr("value");
 		console.log(value8);
 		$(".showclick8").html(value8);
@@ -109,8 +109,8 @@ $(document).ready(function() {
 
 
 	function completed() {
-		
-		var key = ["1995", "John Fox", "John Kasey", "Houston", "Chris Gamble", "three", "five", "Kerry Collins"];
+
+		var key = ["1995", "John Fox", "John Kasey", "Houston", "Chris Gamble", "four", "five", "Kerry Collins"];
 		console.log(value1);
 		console.log(key[0]);
 

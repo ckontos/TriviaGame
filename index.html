@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
 	<meta charset="utf-8">
 	<title>Trivia Game</title>
@@ -7,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
+
 <body>
 
 	<h1>Carolina Panthers Trivia Challenge!</h1>
@@ -24,15 +26,15 @@
 		<div class="timer">
 			<h2>Time Remaining: <span id="timeLeft"></span></h2>
 		</div>
-	
+
 		<div class="question1">
 
 			<h2>1) What year was the Carolina Panther's Franchise created?</h2>
 			<br>
 
-	
+
 			<div class="answers1">
-			
+
 				<div>
 					<button class="answerchoice1" id="q1a" value="1995"><h4>1995</h4></button>
 				</div>
@@ -51,7 +53,7 @@
 
 			</div>
 
-			<div class="selection"> Answer Selected: 
+			<div class="selection"> Answer Selected:
 				<span class="showclick1"></span>
 			</div>
 
@@ -63,9 +65,9 @@
 			<h2>2) Who was the longest tenured head coach for the panthers?</h2>
 			<br>
 
-	
+
 			<div class="answers2">
-			
+
 				<div>
 					<button class="answerchoice2" id="q2a" value="Ron Rivera"><h4>Ron Rivera</h4></button>
 				</div>
@@ -84,7 +86,7 @@
 
 			</div>
 
-			<div class="selection"> Answer Selected: 
+			<div class="selection"> Answer Selected:
 				<span class="showclick2"></span>
 			</div>
 
@@ -95,9 +97,9 @@
 			<h2>3) Who is the Panther's all-time leading scorer?</h2>
 			<br>
 
-	
+
 			<div class="answers3">
-			
+
 				<div>
 					<button class="answerchoice3" id="q3a" value="Steve Smith"><h4>Steve Smith</h4></button>
 				</div>
@@ -116,7 +118,7 @@
 
 			</div>
 
-			<div class="selection"> Answer Selected: 
+			<div class="selection"> Answer Selected:
 				<span class="showclick3"></span>
 			</div>
 
@@ -127,9 +129,9 @@
 			<h2>4) What city did the team play in in their first Super Bowl appearance?</h2>
 			<br>
 
-	
+
 			<div class="answers4">
-			
+
 				<div>
 					<button class="answerchoice4" id="q4a" value="Dallas"><h4>Dallas</h4></button>
 				</div>
@@ -148,7 +150,7 @@
 
 			</div>
 
-			<div class="selection"> Answer Selected: 
+			<div class="selection"> Answer Selected:
 				<span class="showclick4"></span>
 			</div>
 
@@ -159,9 +161,9 @@
 			<h2>5) Who is the franchise leader in interceptions?</h2>
 			<br>
 
-	
+
 			<div class="answers5">
-			
+
 				<div>
 					<button class="answerchoice5" id="q5a" value="Chris Gamble"><h4>Chris Gamble</h4></button>
 				</div>
@@ -180,7 +182,7 @@
 
 			</div>
 
-			<div class="selection"> Answer Selected: 
+			<div class="selection"> Answer Selected:
 				<span class="showclick5"></span>
 			</div>
 
@@ -188,12 +190,12 @@
 
 		<div class="question6">
 
-			<h2>6) How many times have the Panthers worn their all black alternate uniforms (preseason, regular, and post season included)?</h2>
+			<h2>6) How many times have the Panthers worn their all black alternate uniforms (preseason, regular, and post-season included)?</h2>
 			<br>
 
-	
+
 			<div class="answers6">
-			
+
 				<div>
 					<button class="answerchoice6" id="q6a" value="one"><h4>one</h4></button>
 				</div>
@@ -212,7 +214,7 @@
 
 			</div>
 
-			<div class="selection"> Answer Selected: 
+			<div class="selection"> Answer Selected:
 				<span class="showclick6"></span>
 			</div>
 
@@ -223,9 +225,9 @@
 			<h2>7) How many interceptions did Jake Delhomme throw in the infamous meltdown vs the Cardinals in the Divisional Playoffs in 2008?</h2>
 			<br>
 
-	
+
 			<div class="answers7">
-			
+
 				<div>
 					<button class="answerchoice7" id="q7a" value="three"><h4>three</h4></button>
 				</div>
@@ -244,7 +246,7 @@
 
 			</div>
 
-			<div class="selection"> Answer Selected: 
+			<div class="selection"> Answer Selected:
 				<span class="showclick7"></span>
 			</div>
 
@@ -255,9 +257,9 @@
 			<h2>8) Who is the franchises' first ever draft pick</h2>
 			<br>
 
-	
+
 			<div class="answers8">
-			
+
 				<div>
 					<button class="answerchoice8" id="q8a" value="Tim Biakabatuka"><h4>Tim Biakabatuka</h4></button>
 				</div>
@@ -276,7 +278,7 @@
 
 			</div>
 
-			<div class="selection"> Answer Selected: 
+			<div class="selection"> Answer Selected:
 				<span class="showclick8"></span>
 			</div>
 
@@ -288,18 +290,25 @@
 		<div><button id="submitQuiz">Submit Quiz!</button></div>
 
 	</div>
-	
+
 
 	<div class="resultScreen">
-		<p><h1>Correct: <span id="numcorrect"></span></h1></p>
-		<p><h1>Incorrect: <span id="numincorrect"></span></h1></p>
-		<p><h1>Unanswered: <span id="unanswered"></span></h1></p>
+		<p>
+			<h1>Correct: <span id="numcorrect"></span></h1>
+		</p>
+		<p>
+			<h1>Incorrect: <span id="numincorrect"></span></h1>
+		</p>
+		<p>
+			<h1>Unanswered: <span id="unanswered"></span></h1>
+		</p>
 		<p></p><button id="doOver">Try Again!</button>
 	</div>
-	
-	
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
+
 </html>
